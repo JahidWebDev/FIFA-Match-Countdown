@@ -28,7 +28,8 @@ export default function App() {
   };
 
   return (
-    <div
+   <div  className="relative pt-12 z-20 w-full max-w-[460px] fixed-desktop">
+     <div
       className="relative min-h-screen flex items-center justify-center px-3 sm:px-4 overflow-hidden"
       style={{
         backgroundImage: `url(${banner})`,
@@ -227,5 +228,6 @@ export default function App() {
       </div>
 
     </div>
+   </div>
   );
 }

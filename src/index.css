@@ -138,3 +138,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* FORCE SAME DESIGN ON ALL DEVICES */
+
+@media (max-width: 768px) {
+  .fixed-desktop {
+    width: 460px !important;
+    max-width: 460px !important;
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-desktop {
+    transform: scale(0.8);
+  }
+}
