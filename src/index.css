@@ -138,19 +138,95 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* FORCE SAME DESIGN ON ALL DEVICES */
 
-@media (max-width: 768px) {
-  .fixed-desktop {
-    width: 460px !important;
-    max-width: 460px !important;
-    transform: scale(0.9);
-    transform-origin: center;
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 1 !important;
   }
+
+  h2 {
+    font-size: 1rem !important;
+  }
+
+  h3 {
+    font-size: 1rem !important;
+  }
+
+  button {
+    font-size: 14px !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
-@media (max-width: 480px) {
-  .fixed-desktop {
-    transform: scale(0.8);
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  h1 {
+    font-size: 3rem !important;
   }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+}
+
+/* Small Height Devices */
+@media (max-height: 750px) {
+
+  .relative.pt-12 {
+    transform: scale(.90);
+  }
+
+}
+
+/* Very Small Phones */
+@media (max-width: 380px) {
+
+  .relative.pt-12 {
+    transform: scale(.88);
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: .9rem !important;
+  }
+
+  h3 {
+    font-size: .9rem !important;
+  }
+
+}
+
+/* Large Screens */
+@media (min-width: 1400px) {
+
+  .relative.pt-12 {
+    transform: scale(1.08);
+  }
+
+}
+
+/* Ultra Wide Screens */
+@media (min-width: 1920px) {
+
+  .relative.pt-12 {
+    transform: scale(1.15);
+  }
+
 }
