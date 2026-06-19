@@ -30,7 +30,7 @@ export default function App() {
     >
 
       {/* BACKDROP */}
-      <div className="absolute inset-0 bg-black/5 backdrop-blur-md" />
+      <div className="absolute inset-0 bg-black/3 backdrop-blur-md" />
 
       {/* ONLY BORDER ANIMATION */}
       <style>{`
@@ -70,10 +70,10 @@ export default function App() {
     p-4 sm:p-6
     text-white
     overflow-hidden
-    bg-white/10
+    bg-white/3
     backdrop-blur-xl
     border-3 animated-border
-    shadow-[0_20px_80px_rgba(0,0,0,0.6)]
+    shadow-[0_20px_80px_rgba(0,0,0,0.10)]
   "
 >
           {/* HEADER */}
